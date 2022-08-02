@@ -283,7 +283,7 @@ export default {
               {
                 label: "api.v1.mk（肥羊提供-四端八核负载)",
                 value: "http://api.tsutsu.cc:520/sub?"
-              },          
+              }      
         ],
         remoteConfig: [
         {
