@@ -255,35 +255,21 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
+        customBackend: {
+          "192.168.123.16（内网)": "http://192.168.123.16:25500/sub?",
+          "192.168.123.36（内网)": "http://192.168.123.36:25500/sub?",           
+          "subconverter作者提供": "https://sub.xeton.dev/sub?",
+          "sub-web作者提供": "https://api.wcc.best/sub?",
+          "sub作者&lhie1提供": "https://api.dler.io/sub?",
+          "sub.id9.cc (品云提供)": "https://sub.id9.cc/sub?",      
+        },
         backendOptions: [
-              {
-                label: "192.168.123.16（内网) ",
-                value: "http://192.168.123.16:25500/sub?"
-              },
-              {
-                label: "192.168.123.36（内网)",
-                value: "http://192.168.123.36:25500/sub?"
-              },
-              {
-                label: "subcon.dlj.tf (subconverter作者提供) ",
-                value: "https://subcon.dlj.tf/sub?"
-              },
-              {
-                label: "api.dler.io (sub作者&lhie1提供)",
-                value: "https://api.dler.io/sub?"
-              },
-              {
-                label: "api.wcc.best (sub-web作者提供)",
-                value: "https://api.wcc.best/sub?"
-              },
-              {
-                label: "sub.id9.cc (品云提供)",
-                value: "https://sub.id9.cc/sub?"
-              },
-              {
-                label: "api.v1.mk（肥羊提供-四端八核负载)",
-                value: "http://api.tsutsu.cc:520/sub?"
-              }      
+          {value: "http://192.168.123.16:25500/sub?" },
+          {value: "http://192.168.123.36:25500/sub?" },      
+          {value: "https://sub.xeton.dev/sub?"},
+          {value: "https://api.wcc.best/sub?"},
+          {value: "https://api.dler.io/sub?"},
+          {value: "https://sub.id9.cc/sub?" },     
         ],
         remoteConfig: [
         {
