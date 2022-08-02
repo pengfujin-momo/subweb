@@ -4,7 +4,7 @@
       <el-col>
         <el-card>
           <div slot="header">
-            Subscription Converter
+            知寒的订阅转换
             <svg-icon icon-class="github" style="margin-left: 20px" @click="goToProject" />
 
             <div style="display: inline-block; position:absolute; right: 20px">{{ backendVersion }}</div>
@@ -270,7 +270,21 @@ export default {
           "sub.proxypoolv2.tk (Allen Xu提供-vercel)": "https://sub.proxypoolv2.tk/sub?",
           "jp-aws.proxypoolv2.tk (Allen Xu提供-日本AWS）": "http://jp-aws.proxypoolv2.tk:25500/sub?",
         },
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [
+          { value: "http://192.168.123.16:25500/sub?" },
+          { value: "http://192.168.123.36:25500/sub?" },
+          { value: "https://subsc.ednovas.xyz/sub?" },
+          { value: "http://api.tsutsu.cc:520/sub?" },
+          { value: "https://api2.tsutsu.cc/sub?" },
+          { value: "https://api.v1.mk/sub?" },
+          { value: "https://subcon.dlj.tf/sub?" },
+          { value: "https://api.dler.io/sub?" },
+          { value: "https://api.wcc.best/sub?" },
+          { value: "https://api.hope140.live/sub?" },
+          { value: "https://sub.proxypoolv2.tk/sub?" },
+          { value: "https://sub.id9.cc/sub?" },
+          { value: "http://jp-aws.proxypoolv2.tk:25500/sub?" },          
+        ],
         remoteConfig: [
         {
             label: "asnil-diy",
@@ -514,7 +528,7 @@ export default {
     };
   },
   created() {
-    document.title = "Subscription Converter";
+    document.title = "知寒的订阅转换";
     this.isPC = this.$getOS().isPc;
 
     // 获取 url cache
