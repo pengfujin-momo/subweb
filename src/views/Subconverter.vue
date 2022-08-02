@@ -255,7 +255,22 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: "http://192.168.123.16:25500/sub?" }],
+        customBackend: {
+          "192.168.123.16（内网)": "http://192.168.123.16:25500/sub?",
+          "192.168.123.36（内网)": "http://192.168.123.36:25500/sub?",          
+          "subcon.dlj.tf (subconverter作者提供) ": "https://subcon.dlj.tf/sub?",
+          "api.dler.io (sub作者&lhie1提供)": "https://api.dler.io/sub?",
+          "api.wcc.best (sub-web作者提供)": "https://api.wcc.best/sub?",
+          "sub.id9.cc (品云提供)": "https://sub.id9.cc/sub?",
+          "EdNovas后端": "https://subsc.ednovas.xyz/sub?",
+          "api.v1.mk（肥羊提供-四端八核负载)": "https://api.v1.mk/sub?",
+          "api.tsutsu.cc (つつ提供-国内裸奔小鸡)": "http://api.tsutsu.cc:520/sub?",
+          "api2.tsutsu.cc (つつ提供-香港稳定)": "https://api2.tsutsu.cc/sub?",
+          "api.hope140.live (hope提供-vercel)": "https://api.hope140.live/sub?",
+          "sub.proxypoolv2.tk (Allen Xu提供-vercel)": "https://sub.proxypoolv2.tk/sub?",
+          "jp-aws.proxypoolv2.tk (Allen Xu提供-日本AWS）": "http://jp-aws.proxypoolv2.tk:25500/sub?",
+        },
+        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
         remoteConfig: [
         {
             label: "asnil-diy",
