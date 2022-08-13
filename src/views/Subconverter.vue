@@ -255,7 +255,7 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        customBackend: {
+        backendOptions: {
           "192.168.123.16（内网)": "http://192.168.123.16:25500/sub?",
           "192.168.123.36（内网)": "http://192.168.123.36:25500/sub?",
           "subconverter作者提供": "https://sub.xeton.dev/sub?",
