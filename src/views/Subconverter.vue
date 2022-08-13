@@ -255,14 +255,14 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [
-          {value: "http://192.168.123.16:25500/sub?" },
-          {value: "http://192.168.123.36:25500/sub?" },      
-          {value: "https://sub.xeton.dev/sub?"},
-          {value: "https://api.wcc.best/sub?"},
-          {value: "https://api.dler.io/sub?"},
-          {value: "https://sub.id9.cc/sub?" },     
-        ],
+        customBackend: {
+          "192.168.123.16（内网)": "http://192.168.123.16:25500/sub?",
+          "192.168.123.36（内网)": "http://192.168.123.36:25500/sub?",
+          "subconverter作者提供": "https://sub.xeton.dev/sub?",
+          "sub-web作者提供": "https://api.wcc.best/sub?",
+          "sub作者&lhie1提供": "https://api.dler.io/sub?",
+          "sub.id9.cc (品云提供)": "https://sub.id9.cc/sub?",
+        },
         remoteConfig: [
         {
             label: "asnil-diy",
@@ -464,14 +464,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: {
-          "192.168.123.16（内网)": "http://192.168.123.16:25500/sub?",
-          "192.168.123.36（内网)": "http://192.168.123.36:25500/sub?",           
-          "subconverter作者提供": "https://sub.xeton.dev/sub?",
-          "sub-web作者提供": "https://api.wcc.best/sub?",
-          "sub作者&lhie1提供": "https://api.dler.io/sub?",
-          "sub.id9.cc (品云提供)": "https://sub.id9.cc/sub?",      
-        },
+        customBackend: "",
         remoteConfig: "",
         excludeRemarks: "",
         includeRemarks: "",
@@ -479,7 +472,7 @@ export default {
         emoji: true,
         nodeList: false,
         extraset: false,
-        sort: false,
+        sort: true,
         udp: false,
         tfo: false,
         scv: false,
