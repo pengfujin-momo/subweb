@@ -257,7 +257,6 @@ export default {
         },
         customBackend: {
           "192.168.123.16（内网)": "http://192.168.123.16:25500/sub?",
-          "192.168.123.36（内网)": "http://192.168.123.36:25500/sub?",
           "subconverter作者提供": "https://sub.xeton.dev/sub?",
           "sub-web作者提供": "https://api.wcc.best/sub?",
           "sub作者&lhie1提供": "https://api.dler.io/sub?",
@@ -265,7 +264,6 @@ export default {
         },
         backendOptions: [
           {value: "http://192.168.123.16:25500/sub?" },
-          {value: "http://192.168.123.36:25500/sub?" },
           {value: "https://sub.xeton.dev/sub?"},
           {value: "https://api.wcc.best/sub?"},
           {value: "https://api.dler.io/sub?"},
