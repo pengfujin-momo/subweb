@@ -4,7 +4,7 @@
       <el-col>
         <el-card>
           <div slot="header">
-            知寒的订阅转换
+            Subscription Converter
             <svg-icon icon-class="github" style="margin-left: 20px" @click="goToProject" />
 
             <div style="display: inline-block; position:absolute; right: 20px">{{ backendVersion }}</div>
@@ -512,7 +512,7 @@ export default {
     };
   },
   created() {
-    document.title = "知寒的订阅转换";
+    document.title = "Subscription Converter";
     this.isPC = this.$getOS().isPc;
 
     // 获取 url cache
@@ -522,7 +522,6 @@ export default {
   },
   mounted() {
     this.form.clientType = "clash";
-    this.notify();
     this.getBackendVersion();
   },
   methods: {
@@ -674,19 +673,6 @@ export default {
         .finally(() => {
           this.loading = false;
         });
-    },
-    notify() {
-      const h = this.$createElement;
-
-      this.$notify({
-        title: "隐私提示",
-        type: "warning",
-        message: h(
-          "i",
-          { style: "color: teal" },
-          "各种订阅链接（短链接服务除外）生成纯前端实现，无隐私问题。默认提供后端转换服务，隐私担忧者请自行搭建后端服务。"
-        )
-      });
     },
     confirmUploadConfig() {
       if (this.uploadConfig === "") {
