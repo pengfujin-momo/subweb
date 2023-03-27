@@ -296,22 +296,7 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        // customBackend: {
-        //   "192.168.123.16（内网)": "http://192.168.123.16:25500/sub?", 
-        //   "本机后端": "http://127.0.0.1:25500/sub?",
-        //   "肥羊增强型后端【vless+负载均衡】": "https://api.v1.mk/sub?",
-        //   "肥羊备用后端【vless+负载均衡】": "https://sub.d1.mk/sub?",
-        //   "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one/sub?",
-        //   "品云提供后端【实验性】": "https://v.id9.cc/sub?",
-        //   "nameless13提供": "https://www.nameless13.com/sub?",
-        //   "subconverter作者提供": "https://sub.xeton.dev/sub?",
-        //   "sub-web作者提供": "https://api.wcc.best/sub?",
-        //   "sub作者&lhie1提供": "https://api.dler.io/sub?",
-        //   "heroku部署": "https://api.asnil.ml/sub?",          
-        //   "render部署": "https://api.asnil.tk/sub?",
-        // },
         backendOptions: [
-          {value: "http://192.168.123.16:25500/sub?" },   
           {value: "http://127.0.0.1:25500/sub?"},
           {value: "https://api.v1.mk/sub?"},
           {value: "https://sub.d1.mk/sub?"},
@@ -321,25 +306,8 @@ export default {
           {value: "https://sub.xeton.dev/sub?"},
           {value: "https://api.wcc.best/sub?"},
           {value: "https://api.dler.io/sub?"},
-          {value: "https://api.asnil.ml/sub?"},          
-          {value: "https://api.asnil.tk/sub?"},  
         ],     
         remoteConfig: [
-        {
-            label: "asnil-diy",
-            options: [
-              {
-                label: "asnil_ACL4SSR_Online_Mini 精简版 (与Github同步)",
-                value:
-                  "https://raw.githubusercontent.com/pengfujin-momo/myself/main/clash/asnil_ACL4SSR_Online_Mini.ini"
-              },
-              {
-                label: "asnil_ACL4SSR_Online_Full_Google.ini  详细Google分组 (与Github同步)",
-                value:
-                  "https://raw.githubusercontent.com/pengfujin-momo/myself/main/clash/asnil_ACL4SSR_Online_Full_Google.ini"
-              }
-            ]
-          },
         {
             label: "ACL4SSR",
             options: [
